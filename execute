@@ -1,0 +1,18 @@
+#!/bin/sh
+
+FILES=(
+	../../**/rpg_*
+)
+TRANSFORMS=(
+	./test_transforms/objectify.js 
+	../../split.js
+)
+AFTER_ALL=(
+	 ../../concat.js 
+	 ../../extractFilename.js 
+	 ../../clean.js 
+	 ../../mkdirp.js 
+	 ./test_transforms/applyChanges.js
+)
+
+(cd node_modules/reshape/; ./reshape -p ${FILES[@]} -e ${TRANSFORMS[@]} -aa ${AFTER_ALL[@]})

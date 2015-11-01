@@ -1,0 +1,15 @@
+{
+  "name": "rpgmv-destructure",
+  "version": "1.0.0",
+  "description": "Split source into modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "Reshape": "https://github.com/kentaromiura/Reshape",
+    "mkdirp": "*"
+  },
+  "author": "Cristian Carlesso (@kentaromiura)",
+  "license": "MIT"
+}
